@@ -1,0 +1,48 @@
+/* Fondo general */
+body {
+  background-color: #f8f9fa;
+  height: 1000px; /* muy alto para que haya scroll */
+}
+
+
+
+/* Contenedor principal */
+.container {
+  margin-top: 20px;
+  max-width: 1000px;
+}
+
+/* Estilo para los botones */
+.btn {
+  font-weight: 700;
+}
+
+/* Input y select con margen inferior */
+.form-control,
+.form-select {
+  margin-bottom: 10px;
+}
+
+/* Estilo personalizado para el título de secciones (si se usa) */
+.section-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #343a40;
+}
+
+/* Personaliza los radios */
+.form-check-label {
+  margin-right: 20px;
+}
+
+/* Sombra suave para el contenedor */
+.shadow {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mejora visual de los botones al pasar el cursor */
+.btn:hover {
+  opacity: 0.95;
+  transition: 0.3s ease-in-out;
+}

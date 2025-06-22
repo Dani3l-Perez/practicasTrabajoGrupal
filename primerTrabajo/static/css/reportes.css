@@ -1,0 +1,18 @@
+.report-box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 100px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-top: 300px;
+}
+
+.container-report-box-mt-5{
+    margin-top: 500px;
+}
+body{
+    
+  height: 10000px; /* muy alto para que haya scroll */
+
+
+}
