@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+</head>
+<body>
+    <!--formulario para instructor-->
+    
+    {% if rol == "instructor" %}
+        <div>
+            <form id="formInstructor" action="/registrarInstructor/" method="POST">
+                <h2>Ya casi terminamos Instructor.</h2>
+                
+                <label for="inputEspecialidad">Escribe una especialidad:</label>
+                <div style="display: flex; gap: 8px;">
+                    <input type="text" id="inputEspecialidad" placeholder="Ejemplo: Desarrollador web / Experto en JavaScript">
+                    <button type="button" onclick="agregarEspecialidad()">+</button>
+                </div>
+
+                <div id="listaEspecialidades"></div>
+
+                <input type="hidden" name="especialidades" id="especialidadesHidden">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    {% endif %}
+
+    <!--formulario para funcionario de bienestar al aprendiz-->
+
+    {% if rol == "funcionarioBienestar" %}
+        <div>
+            <form id="formFuncionarioBienestar" action="/registrarFuncionarioBienestar/" method="POST">
+                <h2>Ya casi terminamos.</h2>
+                
+                <label for="selectComponente">Componente al que pertenece: </label>
+                <select name="selectComponente" id="">
+                    <option value="">Selecione su componente</option>
+                    <option value="comp1">componente1</option>
+                    <option value="comp2">componente2</option>
+                    <option value="comp3">componente3</option>
+                    <option value="comp4">componente4</option>
+                </select>
+                
+                <br><label for="inputEspecialidad">Escribe una especialidad:</label>
+                <div style="display: flex; gap: 8px;">
+                    <input type="text" id="inputEspecialidad" placeholder="Ejemplo: Especialista en Salud Ocupacional.">
+                    <button type="button" onclick="agregarEspecialidad()">+</button>
+                </div>
+
+                <div id="listaEspecialidades"></div>
+
+                <input type="hidden" name="especialidades" id="especialidadesHidden">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    {% endif %}
+
+    <script src="../static/js/app.js"></script>
+</body>
+</html>

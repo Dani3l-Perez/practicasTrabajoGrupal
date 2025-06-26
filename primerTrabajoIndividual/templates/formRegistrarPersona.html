@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Persona</title>
+</head>
+<body>
+    <div>
+        <form action="/completarDatosPersonales" method="POST">
+            <h2>¡Dinos más de ti!</h2>
+            <p>
+                Este espacio se hace con el fin de tener datos <br>
+                suficientes para las diferentes funciones del sistema <br>
+                y otros con el fin de dar más seguridad.
+            </p>
+
+            <label>Primer Nombre:</label><br>
+            <input type="text" name="txtnombre1" placeholder="Primer Nombre" required>
+
+            <br><label>Segundo Nombre:</label><br>
+            <input type="text" name="txtnombre2" placeholder="Segundo Nombre">
+
+            <br><label>Primer Apellido:</label><br>
+            <input type="text" name="txtapellido1" placeholder="Primer Apellido" required>
+
+            <br><label>Segundo Apellido:</label><br>
+            <input type="text" name="txtapellido2" placeholder="Segundo Apellido">
+
+            <br><label>Seleccione su tipo de documento:</label><br>
+            <select name="selectDocumento" required>
+                <option value="">Tipo de documento</option>
+                <option value="TI">Tarjeta de identidad</option>
+                <option value="CC">Cédula de ciudadanía</option>
+                <option value="CE">Cédula extranjera</option>
+            </select>
+
+            <br><label>Número de documento:</label><br>
+            <input type="number" name="intDocumento" placeholder="Número de documento" required>
+
+            <br><label>Correo académico o principal:</label><br>
+            <input type="email" name="txtCorreoAcademico" placeholder="usuario@soy.sena.edu.co" required>
+
+            <br><label>Número Telefónico:</label><br>
+            <input type="number" name="intCelular" placeholder="Número Telefónico" required>
+
+            <br><label>Género:</label><br>
+            <select name="selectGenero" required>
+                <option value="">Seleccione un Género</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+            </select>
+
+            <br><label>Fecha de Nacimiento:</label><br>
+            <input type="date" name="fechaNacimiento" required>
+
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Esquina verde superior */
+.corner-green-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  background-color: #3ca019;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  z-index: 1;
+}
+
+/* Esquina verde inferior */
+.corner-green-bottom {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: #3ca019;
+  clip-path: polygon(100% 100%, 0 100%, 100% 0);
+  pointer-events: none;
+}
+
+/* Logo superior derecho */
+.logo-top-right {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  width: 90px;
+  height: 70px;
+}
+/* Logo Footer */
+.logo-footer {
+  width: 80px;
+  height: 60px;
+  margin-top: auto;
+}
+
+.main-content {
+  
+      padding: 40px;
+      height: 2000px; /* simula una página larga para hacer scroll */
+      background: #f0f0f0;
+  
+}
+
+footer {
+  position: sticky;
+  background-color: #e0e1e6;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 522px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+    justify-content: space-between  ;
+  gap: 20px;
+}
+/* organizacion letras footer */
+footer a {
+  color: #000000;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+  bottom: 0;
+}
+
+/* Texto sobre esquina verde inferior */
+.text-end {
+  padding-left: 420px;
+  z-index: 4;
+}
+
+.ms-3-social-icons{
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 8px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+

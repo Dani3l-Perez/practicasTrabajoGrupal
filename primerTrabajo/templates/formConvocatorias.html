@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convocatorias</title>
+    <link rel="stylesheet" href="interfaz2.css">
+</head>
+<body>
+     <h1>Lista de Convocatorias</h1>
+     <table>
+  <thead>
+    <tr>
+      <th>Convocatoria</th>
+      <th>Descripción</th>
+      <th>Inscripción</th>
+    </tr>
+  </thead>
+   <tr>
+      <td></td>
+      <td> </td>
+      <td>
+        <form onsubmit="return enviarFormulario(this)">
+          <input type="text" name="nombre" placeholder="Nombre completo" required />
+          <input type="email" name="correo" placeholder="Correo electrónico" required />
+          <select name="nivel">
+            <option value="basico">Básico</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="avanzado">Avanzado</option>
+          </select>
+          <button class="btn" type="submit">Inscribirse</button>
+        </form>
+      </td>
+    </tr>
+    <tr>
+</body>
+</html>

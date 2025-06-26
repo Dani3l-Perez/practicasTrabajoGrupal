@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+
+<div>
+        <h2>Iniciar Sesión</h2>
+
+    <form action="/iniciarSesion/" method="POST">
+        <div>
+            <label for="">Correo:</label> <br>
+            <input type="text" name="txtCorreo" placeholder="correo@gmail.com">
+        </div>
+        <div>
+            <label for="">Contraseña:</label> <br>
+            <input type="password" name="txtContraseña" placeholder="contraseña">
+        </div>
+        <div>
+            <label for="">Indique su rol: </label> <br>
+            <select name="selectRol">
+                <option value="">Selecione su rol aqui</option>
+                <option value="admin">Administrador</option>
+                <option value="instructor">Instructor</option>
+                <option value="funcionarioBienestar">Funcionario Bienestar</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Ingresar"> <br>
+            <a href="/formRegistrarUsuario/">¿Aún no tienes una cuenta?</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

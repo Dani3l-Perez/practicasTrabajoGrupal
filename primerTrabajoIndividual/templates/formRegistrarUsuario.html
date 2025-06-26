@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <div>
+        <form method="POST" action="/registrarUsuario/">
+            <h2>Registro de Usuario</h2>
+            <div>
+                <label for="txtCorreo">Correo:</label> <br>
+                <input type="email" name="txtCorreo" id="txtCorreo" placeholder="correo@gmail.com" required>
+            </div>
+            <div>
+                <label for="txtContraseña">Contraseña:</label> <br>
+                <input type="password" name="txtContraseña" id="txtContraseña" placeholder="Contraseña" required>
+            </div>
+            <div>
+                <label for="selectRol">Rol:</label><br>
+                <select name="selectRol" id="selectRol" required>
+                    <option value="">Selecciona un rol</option>
+                    <option value="admin">Administrador</option>
+                    <option value="instructor">Instructor</option>
+                    <option value="funcionarioBienestar">Funcionario Bienestar</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Registrar</button>
+                <a href="/iniciarSesion/">¿Ya tienes cuenta?</a>
+            </div>
+            <div>
+                {% if mensaje %}
+                    <div class="mensaje">{{ mensaje }}</div>
+                {% endif %}
+            </div>
+        </form>
+    </div>
+</body>
+</html>

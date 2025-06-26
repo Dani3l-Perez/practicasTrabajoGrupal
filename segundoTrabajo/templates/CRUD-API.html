@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD - API</title>
+</head>
+<body>
+    <h1>Transformación entre JSON.stringify y JSON.parse() + localStorage.</h1>
+
+    <!-- Parte 1: Recibir datos del servidor-->
+    <h2>Obtener datos desde la web server.</h2>
+    <button onclick="obtenerDatos()">Obtener Datos</button>
+    <pre id="outputServer">Datos del servidor aparecerán aquí...</pre>
+
+    <!-- Parte 2: Enviar al servidor -->
+    <h2>Enviar datos al web server</h2>
+    <label for="inputJson">Modifica o escribe un objeto JSON:</label>
+    <div>
+        <button onclick="insertarEjemplo()">Insertar Ejemplo</button>
+    </div>
+    <textarea id="inputJson" placeholder='{"nombre": "Nuevo Nombre"}'></textarea>
+    <button onclick="guardarUsuario()">Guardar en localStorage</button>
+    <button onclick="cargarDatos()">Cargar desde localStorage</button>
+    <pre id="outputClient">Datos cargados aparecerán aquí...</pre>
+    <ul id="listaUsuarios"></ul>
+
+    <!-- Enlace al archivo JS externo -->
+    <script src="../static/js/app.js"></script>
+</body>
+</html>
